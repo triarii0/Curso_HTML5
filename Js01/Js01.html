@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script>
+    function escribe(){
+      var p1 = document.getElementById('p1');
+      var em1 = document.getElementById('em1');
+      var strong1 = document.getElementById('strong1');
+      var texto_p1 = document.createTextNode("Paragraph with an ");
+      var texto_em1 = document.createTextNode("emphasized ");
+      var texto_p2 = document.createTextNode("word and ");
+      var texto_strong1 = document.createTextNode("others more emphasized");
+      p1.appendChild(texto_p1);
+      strong1.appendChild(texto_strong1);
+      p2.appendChild(texto_p2);
+      em1.appendChild(texto_em1);
+    }
+  </script>
+</head>
+<body onload="escribe()">
+  <p>
+    Only with JS and without using innerHtml create an html page with this content inside the body, the text must be shown in blue:  
+  </p>
+
+  <br />
+
+  <div style="color:blue">
+    <div id="p1"></div>
+    <em><div id ="em1"></div></em>
+    <div id="p2"></div>
+    <strong><div id="strong1"></div></strong>
+    </p>
+  </div>
+
+</body>
+</html>
