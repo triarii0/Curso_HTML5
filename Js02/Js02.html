@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <script>
+    function carga() {
+      var botones = document.getElementsByClassName("boton");
+      for (var i=0;i<botones.length;i++){
+        botones[i].addEventListener("click", addTexto);
+      }
+   }
+
+   function addTexto() {
+     var idTexto = document.getElementById("texto");
+     var texto = document.createTextNode("Pulsado " + this.id + " " );
+     idTexto.appendChild(texto);
+   }
+  </script>
+
+</head>
+<body onload="carga();">
+  <p>
+    Make a web page with two buttons, if button1 is pushed an alert with the message “Button 1 pushed” must appear and if button2 is pushed an alert
+    with the message “Button 2 pushed” Try to do it with only one handler function
+  </p>
+
+  <br />
+
+  <a href="#" id="1" class="boton azul">Botón 1</a>
+  <a href="#" id="2" class="boton rojo">Botón 2</a>
+  <a href="#" id="3" class="boton naranja">Botón 3</a>
+  <a href="#" id="4" class="boton verde">Botón 4</a>
+
+  <br />
+
+  <div id="texto"></div>
+
+</body>
+</html>
