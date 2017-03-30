@@ -1,0 +1,19 @@
+<html>
+  <script>
+    function tecla(e) {
+      console.log(e.key);
+    }
+    function carga() {
+      var ta1 = document.getElementById("ta1");
+      ta1.addEventListener("keypress", tecla, false);
+    }
+  </script>
+<body onload="carga()">
+  <h1>Open console in chrome devtools and write in the text area</h1>
+
+  <textarea id="ta1"></textarea>
+
+
+</body>
+
+</html>
