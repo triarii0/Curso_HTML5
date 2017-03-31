@@ -12,7 +12,7 @@ describe("Testing throwDice", function(){
     expect(throwDice()).not.toBeLessThan(0);
   });
   //test
-  it("it returns a number less than six", function() {
+  it("it returns a number less than seven", function() {
     expect(throwDice()).toBeLessThan(7);
   });
 
