@@ -1,10 +1,4 @@
 describe("Testing throwDice", function(){
-  var evenNumber, oddNumber;
-  //executes before all test
-  beforeEach(function() {
-    evenNumber = 6;
-    oddNumber = 7;
-  });
   //test
   it("it does not return null", function() {
     expect(throwDice()).not.toBe(null);
